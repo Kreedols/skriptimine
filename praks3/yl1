@@ -6,4 +6,9 @@
 #väärtus saadakse whoami käsust
 kasutaja=`whoami`
 #valjastame muutuja väärtuse koos seletusega
-echo "Tere, $kasutaja"
+echo "Tere, $kasutaja!"
+#
+#loon ja väljastan kella
+kell=`date +"%H:%M"`
+#
+echo "Kell on $kell"
