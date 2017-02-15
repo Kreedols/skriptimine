@@ -11,4 +11,6 @@ echo "Tere, $kasutaja!"
 #loon ja väljastan kella
 kell=`date +"%H:%M"`
 #
-echo "Kell on $kell"
+kuupaev=`date +'%d. %B'`
+#
+echo "Kell on $kell ja kuupäev on $kuupaev."
