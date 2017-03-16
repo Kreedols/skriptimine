@@ -1,0 +1,11 @@
+#!/bin/bash
+#10 numbri välja printimine ja nende summa arvutamine
+
+summa=0
+for i in {1..33}
+do
+	echo -n $i
+	summa=$(($summa+$i))
+done
+echo
+echo "$i arvude summa on: $summa"
