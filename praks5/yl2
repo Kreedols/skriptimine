@@ -1,0 +1,11 @@
+#!/bin/bash
+
+summa=0
+for i in {1..10}
+do
+	jaak=$(($i%2))
+	if [ $jaak -eq 0 ]; then
+		echo -n "$i "
+	fi
+done
+echo
