@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "Sisesta ridade arv: "
+read rida
+echo "Sisesta tärnide kogus: "
+read tarn
+
+for (( i = 1;i <= $rida; i++ ))
+do
+	if [ $i -eq 1 -o $i -eq $rida ]; then
+		echo -n "$i. "
+		for (( s = 1; s <= $tarn; s++ )); do
+		echo -n "* "
+		done
+	else
+		for (( a = 1; a <= $tarn; a++ ))
+		do
+			echo -n "$i.  "
+		done
+	fi
+echo ""
+done
