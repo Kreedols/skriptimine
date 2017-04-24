@@ -1,0 +1,34 @@
+#!/bin/bash
+#
+i=4
+while [ $i -gt 3 ]
+do
+clear
+echo "VALIGE MIDA TEHA"
+echo
+echo "1. - Lihtsalt loon faili antud nimega."
+echo "2. - Loon vastava nimega faili ja teen lahti nano tekstiredaktoriga."
+echo "3. - väljun antud rogrammist."
+echo
+echo "Mida te tahate teha? "
+read i
+	if [ $i -eq 1 ]; then
+		echo -n "Mis on faili nimi? "
+		read a
+		touch $a
+		echo "Fail $s on loodud!"
+
+
+	elif [ $i -eq 2 ]; then
+		echo -n "Mis on faili nimi? "
+		read s
+		touch $s
+		nano $s
+
+	elif [ $i -eq 3 ]; then
+		exit
+
+#	elif [ $i -gt 3 ]; then
+#		echo "Palun sisestage õige number."
+	fi
+done

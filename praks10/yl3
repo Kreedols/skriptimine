@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+for nr in {1..4}
+do
+	cat "test$nr"
+done

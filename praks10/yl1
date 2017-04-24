@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+#
+echo -n "Faili nimi nimi: "
+read i
+echo -n "Numbrist: "
+read s
+echo -n "Numbrini: "
+read a
+
+for (( t = $s; t <= $a; t++ ))
+do
+	touch $i$t
+done
