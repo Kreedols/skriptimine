@@ -1,0 +1,34 @@
+#!/bin/bash
+#
+#Nimi: Kermo Lukas
+#Skripti nimi: menu
+#Skripti ülesanne: Väljastada teatud rida vastavalt mida kasutaja valis
+
+clear
+#Väljastab erinevad variandid
+echo "Please choose a meal."
+echo
+echo "1) steak and potatoes"
+echo "2) fish and chips"
+echo "3) soup and salad"
+echo
+echo -n "Please make a selection (1 or 2 or 3): "
+read i
+#Hakkab kontrollima mis inputi kasutaja sisestas
+if [ $i -eq 1 ]; then
+	echo "Stick to your ribs."
+	echo "Watch your cholesterol"
+	echo "Enjoy your meal!"
+
+elif [ $i -eq 2 ]; then
+	echo "British are coming!"
+	echo "Enjoy your meal!"
+
+elif [ $i -eq 3 ]; then
+	echo "Healthy foods..."
+	echo "Dieting is so boring."
+	echo "Enjoy your meal!"
+else
+#Kui tahetud inputi ei leitud siis väljastab oleva:
+	echo "We only have 3 of the following foods on our menu: 1) 2) 3)"
+fi

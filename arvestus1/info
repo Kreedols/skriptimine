@@ -1,0 +1,13 @@
+#!/bin/bash
+#Nimi: Kermo Lukas (user)
+#Skripti nimi: info
+#Skripti ülesanne: Tervitada sisselogitud kasutajat
+
+#Määrab tegurid
+kas=$(whoami)
+kuup=$(date +'%d.%M.%Y')
+kell=$(date +'%I:%M')
+
+#väljastab teksti koos teguritega
+echo Tere $kas!
+echo Täna on $kuup kell $kell

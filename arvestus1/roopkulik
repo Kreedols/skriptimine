@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+#Nimi: Kermo Lukas
+#Skripti nimi: roopkulik
+##Skripti ülesanne: Printida kujund
+
+
+#küsib infot
+echo "Sisesta ridade arv X ja Y suurus:"
+read arv
+
+#ülevalt alla loendus
+for (( i = 1; i <= arv; i++ ))
+do
+	echo -n "$i. "
+
+#tühikud =?????
+
+#Vasakult premale tärnud
+	for (( s = 1; s <= $arv; s++ ))
+	do
+		echo -n "* "
+	done
+#rea vahetus
+	echo ""
+done
